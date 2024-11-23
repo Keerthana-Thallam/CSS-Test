@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scalable Button</title>
+  <style>
+    
+body {
+  margin: 0;
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  font-family: Arial, sans-serif; 
+  background-color: #f4f4f4; 
+
+
+.scale-button {
+  width: 150px; 
+  height: 50px; 
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  font-size: 1rem; 
+  font-weight: bold; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+
+.scale-button:hover {
+  transform: scale(1.2); 
+  background-color: #0056b3; 
+
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="scale-button">Hover Me</button>
+</body>
+</html>
