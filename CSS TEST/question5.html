@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Photo Gallery</title>
+  <style>
+   
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+
+.gallery {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 10px; 
+  width: 100%;
+  max-width: 400px; 
+}
+
+
+.gallery img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr; 
+  }
+}
+
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="gallery">
+    <img src="C:\Users\keert\OneDrive\Desktop\frontend\CSS\Bootstrap\cooking.png" alt="Photo 1">
+    <img src="C:\Users\keert\OneDrive\Desktop\frontend\CSS\Bootstrap\chef.png" alt="Photo 2">
+    <img src="C:\Users\keert\OneDrive\Desktop\frontend\CSS\Bootstrap\fast food.png" alt="Photo 3">
+    <img src="C:\Users\keert\OneDrive\Desktop\frontend\CSS\Bootstrap\food.jpg" alt="Photo 4">
+  </div>
+</body>
+</html>
