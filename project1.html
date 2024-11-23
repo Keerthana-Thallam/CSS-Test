@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Management System</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-utensils"></i> FoodManager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu"><i class="fa-solid fa-list"></i> Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-light text-center p-5">
+        <h1><i class="fa-solid fa-apple-whole"></i> Welcome to FoodManager</h1>
+        <p class="lead">Manage your food orders, menu, and inventory effortlessly.</p>
+        <button class="btn btn-success"><i class="fa-solid fa-cart-shopping"></i> Get Started</button>
+    </section>
+
+    <!-- Menu Section (Veg & Non-Veg) -->
+    <section id="menu" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4"><i class="fa-solid fa-burger"></i> Menu</h2>
+
+            <!-- Veg Items -->
+            <h3 class="text-center mb-3"><i class="fa-solid fa-leaf"></i> Veg Items</h3>
+            <div class="row justify-content-center">
+                <!-- Card 1 - Veg -->
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="C:\Users\keert\OneDrive\Desktop\frontend\CSS\Bootstrap\pizza.jpg" class="card-img-top" alt="Veg Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-pizza-slice"></i> Veg Pizza</h5>
+                            <p class="card-text">Delicious veggie pizza with fresh toppings.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-success"><i class="fa-solid fa-cart-plus"></i> Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 - Veg -->
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="C:\Users\keert\OneDrive\Desktop\frontend\CSS\Bootstrap\burger.jpg" class="card-img-top" alt="Veg Burger">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-burger"></i> Veg Burger</h5>
+                            <p class="card-text">A healthy veggie burger with organic ingredients.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-success"><i class="fa-solid fa-cart-plus"></i> Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 - Veg -->
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="C:\Users\keert\OneDrive\Desktop\frontend\CSS\Bootstrap\pasta.jpg" class="card-img-top" alt="Veg Pasta">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-bowl-rice"></i> Veg Pasta</h5>
+                            <p class="card-text">Pasta with a rich, creamy tomato sauce.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-success"><i class="fa-solid fa-cart-plus"></i> Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Non-Veg Items -->
+            <h3 class="text-center mb-3"><i class="fa-solid fa-drumstick-bite"></i> Non-Veg Items</h3>
+            <div class="row justify-content-center">
+                <!-- Card 1 - Non-Veg -->
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="C:\Users\keert\OneDrive\Desktop\frontend\CSS\Bootstrap\chicken pizza.png" class="card-img-top" alt="Chicken Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-pizza-slice"></i> Chicken Pizza</h5>
+                            <p class="card-text">A flavorful chicken pizza with extra cheese.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i> Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 - Non-Veg -->
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="C:\Users\keert\OneDrive\Desktop\frontend\CSS\Bootstrap\chicken burger.jpg" class="card-img-top" alt="Chicken Burger">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-burger"></i> Chicken Burger</h5>
+                            <p class="card-text">Juicy chicken patty in a soft, fresh bun.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i> Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 - Non-Veg -->
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="C:\Users\keert\OneDrive\Desktop\frontend\CSS\Bootstrap\chicken wings.jpg" class="card-img-top" alt="Chicken Wings">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-chicken-leg"></i> Chicken Wings</h5>
+                            <p class="card-text">Spicy, crispy chicken wings with a tangy sauce.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i> Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4"><i class="fa-solid fa-envelope"></i> Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label"><i class="fa-solid fa-user"></i> Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label"><i class="fa-solid fa-envelope"></i> Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label"><i class="fa-solid fa-comment"></i> Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-success text-white text-center py-3">
+        <p>&copy; 2024 FoodManager. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
