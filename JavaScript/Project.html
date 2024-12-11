@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h1>Dynamically Add and Delete List Items</h1>
+    <input type="text" id="itemInput" placeholder="Enter an item /">
+    <button id="addItemButton">Add Item</button>
+    <ul id="itemList"></ul>
+    <script>
+        const button= document.getElementById('addItemButton');
+        const itemList=document.getElementById('itemList');
+        const itemInput=document.getElementById('itemInput');
+        button.addEventListener('click',function() { 
+            if(itemInput.value.trim !=='') { 
+                let newItem = document.createElement('li');
+                newItem.textContent = itemInput.value;
+                itemList.appendChild(newItem);
+                itemInput.value= '';
+
+                let deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.className = 'delete';
+                newItem.appendChild(deleteButton);
+                deleteButton.addEventListener('click',function() {
+                    newItem.remove();
+
+                });
+
+                
+
+
+            }
+        });
+        
+        
+    </script>
+</body>
+</html>
